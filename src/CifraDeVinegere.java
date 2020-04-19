@@ -45,17 +45,12 @@ public class CifraDeVinegere {
 		}
 		this.resultado = cifrado;
 
-		System.out.println(this.mensagem);
-		System.out.println(this.chave);
 		System.out.println(cifrado);
 
 		for (int i = 0; i < cifrado.length; i++) {
 			retorno += cifrado[i];
 		}
 
-		for (int k = 0; k < 96; k++) {
-			System.out.println(this.matriz[k]);
-		}
 		return retorno;
 	}
 

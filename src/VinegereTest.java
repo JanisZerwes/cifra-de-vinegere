@@ -7,8 +7,13 @@ public class VinegereTest {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Digite a frase");
 		String frase = sc.nextLine();
-		CifraDeVinegere cv = new CifraDeVinegere(frase, frase);
+		System.out.println("Digite a chave");
+		String chave = sc.nextLine();
+		CifraDeVinegere cv = new CifraDeVinegere(frase, chave);
+
+		System.out.println(" encrypted");
 		cv.cifrar();
+		System.out.println("decifrado");
 		cv.decifrar();
 	}
 
