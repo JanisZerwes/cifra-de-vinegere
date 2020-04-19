@@ -68,6 +68,7 @@ public class CifraDeVinegere {
 			for (int i = 0; i < 96; i++) {
 				coluna[i] = this.matriz[i][y];
 			}
+
 			int a = 0;
 			boolean teste = false;
 			do {
@@ -76,19 +77,19 @@ public class CifraDeVinegere {
 				}
 				a++;
 			} while (teste == false);
+
 			decifrado[cont] = this.matriz[a][0];
 
 		}
+
 		for (int i = 0; i < decifrado.length; i++) {
 			retorno += decifrado[i];
-
 		}
+
 		System.out.println(this.mensagem);
-		System.out.println(this.chave);
-		System.out.println(decifrado);
 
 		this.resultado = decifrado;
 		return retorno;
-	}
 
+	}
 }
